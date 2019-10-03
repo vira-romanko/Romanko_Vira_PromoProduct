@@ -17,11 +17,13 @@ The App is live oh Heroku hosting service at
 https://idpbootcamp.herokuapp.com/index.html
 
 
-## Build with
+## Build with/ Tools
 * **HTML5**
 * **SASS/CSS3**
 * **JavaScript**
 * **Node.js**
+* **Express**
+* **Gulp**
 
 
 ## Workspace (development)
