@@ -1,2 +1,2 @@
 # CATCH YOUR WAVE!!!
-![Image description](mockup.jpg)
+![Image description](public/images/mockup.jpg)
