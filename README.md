@@ -14,8 +14,7 @@ Application that highlights products for traveling and surfing. You can also pot
 ## Deployment
 
 The App is live oh Heroku hosting service at
-https://idpbootcamp.herokuapp.com/index.html
-
+https://wave-promo-app.herokuapp.com
 
 ## Build with/ Tools
 * **HTML5**
