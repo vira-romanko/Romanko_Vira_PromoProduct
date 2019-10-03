@@ -6,8 +6,8 @@ Application that highlights products for traveling and surfing. You can also pot
 
 
 ## Get started
-* In Terminal run: npm start
-* In Browser go: localhost:3000
+* In Terminal run: ```npm start```
+* In Browser go: ```localhost:3000```
 
 
 
@@ -21,7 +21,7 @@ https://idpbootcamp.herokuapp.com/index.html
 * **HTML5**
 * **SASS/CSS3**
 * **JavaScript**
-* **Node.js/JavaScript**
+* **Node.js**
 
 
 ## Workspace (development)
@@ -38,5 +38,5 @@ https://idpbootcamp.herokuapp.com/index.html
 
 ## Acknowledgment/References
 
-* **Pinterest/Dribbble/Google** - *Design inspiration* 
+* **Pinterest/Dribbble/Google** - *Design inspiration/images* 
 
