@@ -1,1 +1,2 @@
-# Catch your wave!!!
+# CATCH YOUR WAVE!!!
+![Image description](mockup.jpg)
