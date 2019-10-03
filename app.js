@@ -2,9 +2,8 @@ const express = require('express');
 const path = require('path'); // path lets us navigate the firs system
 const hbs = require("hbs");// data bonding
 
-//require the sql connection
-const sql = require('./utils/sql');
-// heroky assigns a port it deploys via process (environment variables - coming)
+
+// heroku assigns a port it deploys via process (environment variables - coming)
 // locally this  run @ port 3000; remotley it'll
 const port = process.env.PORT || 3000; //a double pipe - ||-  means or
 
@@ -26,43 +25,22 @@ app.get ('/', (red, res) => {
 
 })
 
-app.get('/contact', (req,res) => {
-  console.log('at the cont route')
-  //res.sendFile(path.join(__dirname + '/views/contact.html'));
-  res.render('contact', { message: "whats your name!"})
 
-})
-
-app.get('/users', (req,res) => {
-  console.log('at the users route');
-
-  sql.getConnection((err, connection) => {
-    if(err){
-      return console.log(err.message);
-      
-    }
-
-    let query = `SELECT * FROM tbl_card`;
-    sql.query(query, (err, rows) =>{
-      connection.release();
-
-      if (err) {
-        return console.log(err.message)
-      }
-
-      console.log(rows);
-      res.render('user', rows[0]);
-    })
-  })
-})
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+    next(createError(404));
+  });
   
-
-
-app.get('/portfolio', (req,res) => {
-  console.log('at the port route')
-  res.send('on the portfolio page');
-
-})
+  // error handler goes here
+  app.use(function(err, req, res, next) {
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+  
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
+  });
 
 app.listen(port, () => {
   console.log(`Server running at ${port}/`);
