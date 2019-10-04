@@ -1,0 +1,243 @@
+
+  //logo
+  .logo{
+    
+     margin: 20px;
+     
+  }
+
+  //nav
+  .desktop {
+    //padding: 20px;
+    ul {
+      display: flex;
+    }
+    li {
+      padding: 20px;
+      list-style-type: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 10px;
+      &:hover {
+        background:$header;
+        color: $navbar;
+        
+      }
+      &:active {
+        opacity: 1;
+        background:$header;
+        color:$navbar;
+        a {
+          color:$navbar;
+        }
+      }
+    }
+  }
+
+
+  .hamburgerMenu {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .menuImg{
+        margin: 35px 0 20px 20px;//trbl
+    }
+
+
+   
+  }
+  
+  .navBar {
+    display: none;
+  }
+  
+  .mobile {
+    background: $navbar;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    margin-top: 50px;
+  
+    li {
+      padding: 20px;
+      font-size: 5vw;
+      font-family:$secondary-font;
+      text-align: center;
+
+      &:hover {
+        background:$tagline;
+        color: $navbar;
+        
+      }
+    }
+
+
+
+  }
+  
+  .toggle {
+    display: block;
+  }
+  
+  
+  @media screen and (min-width: 1024px) {
+    .mobile {
+      display: none;
+    
+    }
+    .navigationBar {
+        padding: 0px;
+      align-items: center;
+
+  
+      .desktop {
+        display: block;
+  
+        li {
+          font-size: 20px;
+          margin: 0 40px;
+        }
+      }
+  
+      .hamburgerMenu {
+        display: none;
+      }
+    }
+  }
+
+  //h1
+  h1{
+      text-align: left;
+      font-family: $primary-font;
+      font-weight: bold;
+      color: $header;
+      margin-top: 20px;
+      margin-left: 40px;
+      margin-bottom: 30px;
+  }
+
+.back{
+    a{
+        font-family: $secondary-font;
+    color:  $tagline;
+    margin-left: 40px;
+
+    }
+    
+}
+
+.product
+{
+    @extend %product;
+   
+}
+.stars{
+@extend %product;
+}
+
+h2{
+    font-family: $primary-font;
+    font-size: 3vh;
+    color: $but-color;
+    @extend %product;
+}
+
+.u-name{
+    color:$indicator-active;
+}
+  
+
+#section1
+
+{
+    @extend %product;
+    display: block;
+    // display: flex;
+    // flex-direction:column-reverse;
+   
+    button{
+        background-color: transparent;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 8px;
+        color:$header;
+        font-family: $secondary-font;
+        font-size: 2vh;
+        outline: none;
+        &:hover{
+            background-color: $indicator-active;
+            color:$header-bar;
+            
+        }
+       
+      
+     
+      
+
+    }
+
+    .bio-wrapper, .u-role, .u-name, .u-bio, .u-image{
+        @extend %product;
+      
+    }
+
+
+    .u-bio {
+      
+            display: block;
+            font-family: $secondary-font;
+            color:$text;
+            font-size: 2vh;
+            padding: 10px;
+        
+        
+    }   
+
+
+    .bio-wrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .u-image{
+        margin:15px;
+    }
+       
+            
+}
+div{
+
+    //@extend %product;
+
+    .btnCon{
+        @extend %product;
+        background-color: $but-color;
+        color:$header-bar;
+        font-family: $secondary-font;
+        font-size: 2vh;
+        font-weight: bold;
+        padding: 20px 20px 20px 20px;
+        border-radius: 17px;
+        width: 10%;
+    
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+       
+     
+    }
+
+     a{
+text-align: center;
+    }
+}
+
+
+
+    
