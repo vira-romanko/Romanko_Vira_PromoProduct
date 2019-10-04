@@ -213,20 +213,6 @@ header {
 .toggle {
   display: block; }
 
-@media screen and (min-width: 1024px) {
-  .mobile {
-    display: none; }
-
-  .navigationBar {
-    padding: 0px;
-    align-items: center; }
-    .navigationBar .desktop {
-      display: block; }
-      .navigationBar .desktop li {
-        font-size: 20px;
-        margin: 0 40px; }
-    .navigationBar .hamburgerMenu {
-      display: none; } }
 h1 {
   text-align: left;
   font-family: "Oswald", Halvetica, sans-serif;
@@ -291,6 +277,67 @@ div .btnCon {
 div a {
   text-align: center; }
 
+@media screen and (min-width: 758px) {
+  .logo {
+    width: 15vh;
+    margin-right: 50px; }
+
+  h1 {
+    font-size: 8vh; }
+
+  .back {
+    font-size: 4vh;
+    margin-bottom: 50px; }
+    .back img {
+      width: 4vh; }
+
+  h2 {
+    font-size: 5vh; }
+
+  button {
+    padding: 40px;
+    margin: 30px;
+    border-radius: 10px;
+    font-size: 5vh; } }
+@media screen and (min-width: 1024px) {
+  .mobile {
+    display: none; }
+
+  .navigationBar {
+    padding: 0px;
+    align-items: center; }
+    .navigationBar .desktop {
+      display: block; }
+      .navigationBar .desktop li {
+        font-size: 20px;
+        margin: 40px 40px 40px 40px; }
+    .navigationBar .hamburgerMenu {
+      display: none; }
+
+  .logo {
+    width: 20vh;
+    margin-right: 100px;
+    margin-top: 40px; }
+
+  h1 {
+    font-size: 8vh;
+    margin-left: 80px; }
+
+  .back {
+    font-size: 5vh;
+    margin-bottom: 80px;
+    margin-left: 40px; }
+    .back img {
+      width: 5vh; }
+
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .product .stars {
+      padding: 40px; }
+    .product panel {
+      width: auto; } }
 .product, .stars, h2, #section1, #section1 .bio-wrapper, #section1 .u-role, #section1 .u-name, #section1 .u-bio, #section1 .u-image, div .btnCon {
   text-align: center;
   margin-top: 5vh; }

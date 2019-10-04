@@ -83,8 +83,178 @@
   .toggle {
     display: block;
   }
+
+   //h1
+   h1{
+    text-align: left;
+    font-family: $primary-font;
+    font-weight: bold;
+    color: $header;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.back{
+  a{
+      font-family: $secondary-font;
+  color:  $tagline;
+  margin-left: 40px;
+
+  }
+  
+}
+
+.product
+{
+  @extend %product;
+ 
+}
+.stars{
+@extend %product;
+}
+
+h2{
+  font-family: $primary-font;
+  font-size: 3vh;
+  color: $but-color;
+  @extend %product;
+}
+
+.u-name{
+  color:$indicator-active;
+}
+
+
+#section1
+
+{
+  @extend %product;
+  display: block;
+  // display: flex;
+  // flex-direction:column-reverse;
+ 
+  button{
+      background-color: transparent;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      color:$header;
+      font-family: $secondary-font;
+      font-size: 2vh;
+      outline: none;
+      &:hover{
+          background-color: $indicator-active;
+          color:$header-bar;
+          
+      }
+     
+    
+   
+    
+
+  }
+
+  .bio-wrapper, .u-role, .u-name, .u-bio, .u-image{
+      @extend %product;
+    
+  }
+
+
+  .u-bio {
+    
+          display: block;
+          font-family: $secondary-font;
+          color:$text;
+          font-size: 2vh;
+          padding: 10px;
+      
+      
+  }   
+
+
+  .bio-wrapper{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .u-image{
+      margin:15px;
+  }
+     
+          
+}
+div{
+
+  //@extend %product;
+
+  .btnCon{
+      @extend %product;
+      background-color: $but-color;
+      color:$header-bar;
+      font-family: $secondary-font;
+      font-size: 2vh;
+      font-weight: bold;
+      padding: 20px 20px 20px 20px;
+      border-radius: 17px;
+      width: 10%;
+  
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+     
+   
+  }
+
+   a{
+text-align: center;
+  }
+}
+
+
+//Tablet
+@media screen and (min-width: 758px){
+    .logo{
+        width: 15vh;
+        margin-right: 50px;
+    }
+
+  h1{
+      font-size: 8vh;
+  }
+
+  .back{
+      font-size: 4vh;
+      margin-bottom: 50px;
+      img{
+          width: 4vh;
+      }
+  }
+
+h2{
+    font-size: 5vh;
+}
+
+
+button{
+    
+    padding: 40px;
+    margin: 30px;
+    border-radius: 10px;
+    font-size: 5vh;
+   
+      
+    }
+}
+
+  
+
   
   
+
+
+  //Desktop
   @media screen and (min-width: 1024px) {
     .mobile {
       display: none;
@@ -100,7 +270,7 @@
   
         li {
           font-size: 20px;
-          margin: 0 40px;
+          margin: 40px 40px 40px 40px;
         }
       }
   
@@ -108,136 +278,44 @@
         display: none;
       }
     }
-  }
 
-  //h1
-  h1{
-      text-align: left;
-      font-family: $primary-font;
-      font-weight: bold;
-      color: $header;
-      margin-top: 20px;
-      margin-left: 40px;
-      margin-bottom: 30px;
-  }
-
-.back{
-    a{
-        font-family: $secondary-font;
-    color:  $tagline;
-    margin-left: 40px;
-
+    .logo{
+        width: 20vh;
+        margin-right: 100px;
+        margin-top: 40px;
     }
-    
-}
 
-.product
-{
-    @extend %product;
-   
-}
-.stars{
-@extend %product;
-}
+    h1{
+        font-size: 8vh;
+        margin-left: 80px;
+    }
+  
+    .back{
+        font-size: 5vh;
+        margin-bottom: 80px;
+        margin-left: 40px;
+        img{
+            width: 5vh;
+        }
+    }
 
-h2{
-    font-family: $primary-font;
-    font-size: 3vh;
-    color: $but-color;
-    @extend %product;
-}
+    .product{
+        display:flex;
+      flex-direction: row;
+      justify-content: space-around;
 
-.u-name{
-    color:$indicator-active;
-}
+      .stars{
+        padding: 40px;
+      }
+      panel{
+          width:auto;
+
+      }
+    }
+
   
 
-#section1
+  
+  }
 
-{
-    @extend %product;
-    display: block;
-    // display: flex;
-    // flex-direction:column-reverse;
-   
-    button{
-        background-color: transparent;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 8px;
-        color:$header;
-        font-family: $secondary-font;
-        font-size: 2vh;
-        outline: none;
-        &:hover{
-            background-color: $indicator-active;
-            color:$header-bar;
-            
-        }
-       
-      
-     
-      
-
-    }
-
-    .bio-wrapper, .u-role, .u-name, .u-bio, .u-image{
-        @extend %product;
-      
-    }
-
-
-    .u-bio {
-      
-            display: block;
-            font-family: $secondary-font;
-            color:$text;
-            font-size: 2vh;
-            padding: 10px;
-        
-        
-    }   
-
-
-    .bio-wrapper{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .u-image{
-        margin:15px;
-    }
-       
-            
-}
-div{
-
-    //@extend %product;
-
-    .btnCon{
-        @extend %product;
-        background-color: $but-color;
-        color:$header-bar;
-        font-family: $secondary-font;
-        font-size: 2vh;
-        font-weight: bold;
-        padding: 20px 20px 20px 20px;
-        border-radius: 17px;
-        width: 10%;
-    
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-       
-     
-    }
-
-     a{
-text-align: center;
-    }
-}
-
-
-
-    
+ 

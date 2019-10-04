@@ -14,7 +14,7 @@
           </ul>
         </div>
         <div class="hamburgerMenu">
-        <img  class ="menuImg"src="images/menu1.svg" alt="Menu">
+        <img  class ="menuImg" src="images/menu1.svg" alt="Menu">
         </div>
       </nav>
       <nav class="navBar mobile">
@@ -38,15 +38,19 @@
         /> Back to all</a>
         </div>
         <div class="product"> 
-           <img   src="images/product.png" alt="product"/>
-                 
-            <div class="stars"><img   src="images/stars.svg" alt="stars"/>
+           <picture>
+			<source srcset="images/product.png" media="(max-width: 1024px)">
+				<img src="images/product_large.png" alt="Product">
+		</picture>
+               <section class="manage">
+                 <h2 class="hidden">Description</h2>
+
+                 <div class="stars"><img   src="images/stars.svg" alt="stars"/>
          </div>  
          <h2>Surf Signature Flex 5’8” Con Pad</h2>
-        </div>
 
-
-        <section id="section1" class="panel">
+          <section id="section1" class="panel">
+          <h2 class="hidden">Buttons</h2>
 
 
 <!-- dynamically add some team buttons here -->
@@ -57,12 +61,14 @@
            
             </div>
 
-
-            
             
         </section>
+        <div><a class="button btnCon" href="/">Buy</a></div>
+        </div>
+    </section>  
+            
 
-    <div><a class="button btnCon" href="/">Buy</a></div>
+    
 
 
        
