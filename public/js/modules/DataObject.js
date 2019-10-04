@@ -14,15 +14,14 @@ const Team = {
     },
     FEATURES:{
     bio:"100% surfing shap; Very versatile for all kinds of waves ; Incredibly balanced and intuitive Real Carving Machines",
-    image: "info_pic1.png"
+    image: "pdoduct_pic2.png"
     
     
     },
 
     RATINGS: {
     bio:" Current Rating: 5 stars",
-    image: "shop.svg"
-
+    image: "pdoduct_pic2.png"
     
     }
     
