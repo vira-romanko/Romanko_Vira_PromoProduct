@@ -41,3 +41,6 @@ https://wave-promo-app.herokuapp.com
 
 * **Pinterest/Dribbble/Google** - *Design inspiration/images* 
 
+## Future Plans
+* Develop Desktop left side navigation
+
